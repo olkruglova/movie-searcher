@@ -5,13 +5,21 @@
         <meta charset="utf-8">
         <title>Movie searcher</title>
 
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+
+        <!-- -->
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     </head>
 
@@ -20,9 +28,11 @@
 
             <header>
                 <section id="nav">
-                    <i class="icon fas fa-search"></i>
-                    <input id="searcher" type="text" name="searcher" value="" placeholder="&#61447;">
-                    <button class="submit">Search</button>
+                    <form>
+                        <i class="icon fas fa-search"></i>
+                        <input id="searcher" type="text" name="title" value="" placeholder="&#61447;" >
+                        <input class="submit" type="submit" value="Search">
+                    </form>
                 </section>
             </header>
             <main>
@@ -33,15 +43,15 @@
                     <h4 class="description">Here you can find your favorite movies and not only...</h4>
                 </article>
                 <article id="search-result">
-                    <span class="error-text"></span>
+                    <div class="error-text"></div>
                     <div class="data"></div>
                     <div class="movie-info"></div>
                 </article>
             </main>
 
         </div>
-        
-        <script src="js.js"></script>
+
+        <script src="js/js.js"></script>
 
     </body>
 </html>
